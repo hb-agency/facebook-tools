@@ -1,0 +1,11 @@
+
+<div class="facebook_post">
+	
+	<?php if(strlen($this->picture)): ?>
+	<div class="image_container">
+		<a href="<?php echo $this->link; ?>" title="<?php echo $this->from; ?>"<?php echo LINK_NEW_WINDOW; ?>><img src="<?php echo $this->picture; ?>"/></a>
+	</div>
+	<?php endif; ?>
+	<p class="message"><a href="<?php echo $this->link; ?>" title="<?php echo $this->from; ?>"<?php echo LINK_NEW_WINDOW; ?>><?php echo $this->message; ?></a></p>
+	<p class="date"><?php echo $this->created_time; ?></p>
+</div>
